@@ -1,6 +1,6 @@
 # AIHUB — Your Organisation's Brand Agent
 
-A Databricks-native intelligent application that orchestrates AI supervisor agents across Genie Spaces via a persistent organisational memory network — eliminating the human bottlenecks that prevent AI analytics from operating autonomously. 
+A Databricks-native intelligent application that orchestrates AI supervisor agents across Genie Spaces via a persistent organisational memory network — eliminating the human bottlenecks that prevent AI analytics from operating autonomously.
 
 **Hackathon:** [Databricks Building Intelligent Apps with Data + AI — APJ 2026](https://buildintelligentapps-databricks.com)
 
@@ -28,7 +28,7 @@ The result is a unified conversational interface through which analysts and non-
 
 - **Automate supervisor orchestration**: context-aware routing across multiple Genie Spaces via the Databricks Genie API and Agent Bricks API.
 - **Persistent organisational memory network**: Databricks Lakebase graph memory layer that retains chat history, organisational context, and analytical decisions across sessions.
-- **Analytical Memory Layer**: built-in User interface to view and manage agent memory network curated from previous chat history.
+- **Analytical Memory Layer**: User interface app ready to download in your Databricks workspace and deploy via Databricks App.
 
 ## AI Agentic Architecture
 
@@ -59,3 +59,29 @@ User / Business Stakeholder
 │  (Organisational Memory) │    domain glossary, session history,
 └──────────────────────────┘    analytical decisions & approved metrics
 ```
+
+## Project Directory Summary
+
+```bash
+.
+├── main.py                    # Streamlit App bootstrap entry point
+├── requirements.txt           # App's dependencies
+├── ui_shell.py                # Streamlit UI shell launcher/helpers
+├── app/                       # Core application package
+│   ├── __init__.py            # Package marker
+│   ├── __main__.py            # Module execution entry (python -m app)
+│   ├── notebooks/             # Demos with Genie Space/Agentbrick API
+│   ├── src/                   # Internal source modules
+│   │   └── __init__.py        # Subpackage marker
+│   └── tests/                 # Test package
+└── pages/                     # Streamlit multipage
+      ├── 1_knowledge_base.py    # Knowledge Graph Network Viewer
+      ├── 2_monitor.py           # Genie Space Monitoring page
+      └── Home.py                # Home/landing page & UI Chatbot with your Brand Agent
+```
+
+## Reference
+
+- [Supervisor Agent Hierarchies](https://www.emergentmind.com/topics/supervisor-agent-hierarchies)
+
+> Built on the official Databricks [`streamlit-chatbot-app`](https://github.com/databricks/app-templates/tree/main/streamlit-chatbot-app) template, extended with supervisor agent orchestration, graph memory networking, and multi-Genie Space coordination.

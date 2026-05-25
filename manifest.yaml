@@ -1,0 +1,9 @@
+version: 1
+name: "AIHUB"
+description: "A Databricks-native supervisor agent app that routes questions across Genie Spaces, synthesizes multi-domain answers, and uses persistent organisational memory for context-aware analytics."
+
+resource_specs:
+- name: "serving-endpoint"
+  description: "Databricks Model Serving endpoint used by the AIHUB supervisor agent for natural language orchestration, response synthesis, and chat generation across Genie Spaces."
+  serving_endpoint_spec:
+    permission: "CAN_QUERY"
