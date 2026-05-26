@@ -1,11 +1,6 @@
 # Analytical Layer
 
-- **Purpose:** Visualizes customer segments and clusters as a graph.
-- **Key logic:**
-  - Loads segment/cluster data from JSON
-  - Renders interactive graph with pyvis
-  - Shows legend and segment index
-- **File:** `pages/2_Analytical_Layer.py`
+AIHUB Analytical layer is graph memory network used to support multi-label features and business insights for Databrick's deployed apps, analysts and non-tech stakeholders.
 
 ## Overview
 
