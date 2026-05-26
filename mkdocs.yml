@@ -1,0 +1,68 @@
+site_name: AIHUB Documentation
+site_description: Databricks-native supervisor agent app orchestrating Genie Spaces with persistent organisational memory.
+site_url: https://whoamimip.github.io/aihub/
+repo_url: https://github.com/whoamimip/aihub
+repo_name: whoamimip/aihub
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+  - navigation.tabs
+  - navigation.sections
+  - navigation.expand
+  - navigation.top
+  - navigation.indexes
+  - content.code.copy
+  - content.action.edit
+  - toc.follow
+  palette:
+  - scheme: default
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/weather-night
+      name: Switch to dark mode
+  - scheme: slate
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+- admonition
+- attr_list
+- md_in_html
+- toc:
+    permalink: true
+- pymdownx.details
+- pymdownx.tabbed:
+    alternate_style: true
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid
+      format:
+
+        !!python/name:pymdownx.superfences.fence_code_format ""
+nav:
+- Home: index.md
+- Architecture:
+  - End-to-end overview: architecture/overview.md
+- Setup:
+  - Local development: setup/local-dev.md
+- Deployment:
+  - Databricks App: deployment/databricks.md
+- Pages:
+  - Overview: pages/index.md
+  - Home (Chat): pages/home.md
+  - Knowledge Base: pages/knowledge-base.md
+  - Monitor: pages/monitor.md
+
+extra:
+  social:
+  - icon: fontawesome/brands/github
+    link: https://github.com/whoamimip/aihub

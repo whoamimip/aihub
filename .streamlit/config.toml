@@ -1,13 +1,66 @@
 [theme]
 base = "dark"
-primaryColor = "#72d1ff"
-backgroundColor = "#04243d"
-secondaryBackgroundColor = "#0a4a73"
-textColor = "#edf8ff"
+primaryColor           = "#bd93f9"   # Dracula Purple  → buttons, sliders, focus rings
+backgroundColor        = "#282a36"   # Dracula Background
+secondaryBackgroundColor = "#44475a" # Dracula Current Line → sidebar, cards, inputs
+textColor              = "#f8f8f2"   # Dracula Foreground
+
 font = "sans serif"
 
+redColor    = "#ff5555"   # Dracula Red
+orangeColor = "#ffb86c"   # Dracula Orange
+yellowColor = "#f1fa8c"   # Dracula Yellow
+blueColor   = "#8be9fd"   # Dracula Cyan
+greenColor  = "#50fa7b"   # Dracula Green
+violetColor = "#ff79c6"   # Dracula Pink
+grayColor   = "#6272a4"   # Dracula Comment
+
+linkColor   = "#8be9fd"   # Dracula Cyan
+linkUnderline = true
+
+codeTextColor       = "#50fa7b"   # Dracula Green
+codeBackgroundColor = "#44475a"   # Dracula Current Line
+codeFont            = "monospace"
+codeFontSize        = "0.875rem"
+codeFontWeight      = 400
+
+# FIX: headingFont must be a font-family string, not a number
+headingFont         = "sans-serif"
+headingFontSizes    = ["2.75rem", "2.25rem", "1.75rem", "1.5rem", "1.25rem", "1rem"]
+headingFontWeights  = [700, 600, 600, 600, 600, 600]
+
+baseRadius   = "large"
+buttonRadius = "full"
+# FIX: borderColor must be a hex string or removed — `false` is invalid
+borderColor              = "#6272a4"   # Dracula Comment (subtle border)
+dataframeBorderColor     = "#6272a4"
+dataframeHeaderBackgroundColor = "#282a36"
+
+showWidgetBorder = false
+
+[theme.sidebar]
+primaryColor             = "#bd93f9"
+backgroundColor          = "#21222c"   # slightly darker than main bg
+secondaryBackgroundColor = "#44475a"
+textColor                = "#f8f8f2"
+
 [server]
-headless = true
+headless            = true
+enableCORS          = true
+enableXsrfProtection = true
+runOnSave           = false
+
+[logger]
+level         = "info"
+messageFormat = "%(asctime)s %(message)s"
 
 [browser]
-gatherUsageStats = false
+serverAddress    = "localhost"
+gatherUsageStats = true
+serverPort       = 8501
+
+[secrets]
+files = [
+  "~/.streamlit/secrets.toml",
+  ".streamlit/secrets.toml",
+]
