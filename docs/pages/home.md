@@ -1,13 +1,12 @@
 # AI Agentic Architecture
 
-- **Purpose:** Main chat interface with the Brand Agent (Supervisor). Shows Genie Space activity status.
-- **File:** `pages/Home.py`
+Brief on Brand Agent (Supervisor) and Genie Spaces.
 
 ## Supervisor Agent
 
 A Supervisor Agent, built on Agent Bricks, performs two functions:
 
-- **Autonomous intent classification** — incoming natural language queries are classified by domain without human intermediation.
+- **Chat History Summarisation & transformations** — incoming session/chat histories, traces on agent's thought process or SQL natural language queries are classified by context inferred from its vector space representation ( `sentence-transformers` ).
 - **Query routing** — queries are routed to the appropriate Genie Space, organised by organisational context. For this proof of concept, the domain is customer churn and retention. Representative Genie Spaces include Customer Analytics, Subscription Models, and Customer Cohort Forecasting.
 
 ```mermaid
