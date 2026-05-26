@@ -1,75 +1,43 @@
 # AIHUB — Your Organisation's Brand Agent
 
-A Databricks-native intelligent application that orchestrates AI supervisor agents across Genie Spaces via a persistent organisational memory network — eliminating the human bottlenecks that prevent AI analytics from operating autonomously.
+A Databricks-native intelligent application that automates the data lifecycle of your AI apps & Genie spaces by persisting chat histories and frequent questions in a unified graph memory network.
 
 **Hackathon:** [Databricks Building Intelligent Apps with Data + AI — APJ 2026](https://buildintelligentapps-databricks.com)
 
 # Problem Statement
 
-Organisations with AI based solutions on Databricks face a common bottleneck in building, managing the validating these new gadgets.
+Organisations with AI based solutions on Databricks face a common bottleneck in building these new gadgets.
 
 Genie Spaces, while powerful in isolation, operate without a shared memory layer — each requiring analysts to manually re-establish context, route queries, and reconstruct institutional knowledge from scratch every session. Overtime, this utlimately leads to the key challenges:
 
-- Fragmented memory across AgentBricks & Genie Spaces: no shared memory of past decisions, contextual knowledge or retaining organisation's business' metrics.
-- Reinforcement Learning: each interaction produces insight but leaves no lasting intelligence behind, meaning the system cannot learn or improve over time. This leads to analysts becoming the intermediaries between business questions and the right data domain - reintroducing the bottlenecks AI was deployed to eliminate.
-
-For any business that depends on understanding its customers for e.g. their behaviour, their needs, their likelihood to disengage, and the conditions under which they return — these gaps translate directly into delayed decisions, inconsistent answers, and unrealised value from data infrastructure that has already been built.
+- **Fragmented memory across AgentBricks & Genie Spaces**: no shared memory of past decisions, contextual knowledge or retaining organisation's business' metrics.
+- **Absent Human Feedback Loop & Reinforcement Learning**: repetitive daily tasks in evaluating multiple Genie spaces could be time consuming which may introduce the bottlenecks AI was deployed to eliminate.
 
 # Solution Overview
 
-AIHUB provides a fully managed workflow of AI Agentic orchestration layer that sits above your AI solutions & Genie Spaces, connecting them through one common graph memory network - built to persist your organisation's contextual information and organised chat history organisations.
+AIHub sovles these problems by building a unified memory layer which conversly also serves as an analytical layer for AI agents, analysts and non-tech business users to use in their decision making processes.
 
 In summary, it does three things no individual Genie Space can do alone:
 
 1. **Routes** natural language queries autonomously to the appropriate Genie Space agent without human intervention
 2. **Coordinates** multi-domain questions by synthesising responses across agents into a single, coherent answer
-3. **Remembers** organisation business definitions, approved metrics, business rules, and analytical decisions are stored and interconnected in a graph memory network via Lakebase, so context deepens with every session.
+3. **Remembers** organisation business definitions, approved metrics, business rules, and analytical decisions are stored and interconnected in a graph memory network via Unity Catalog Delta Lake, so every chat session is isolated with no clear lineage or trace.
 
-With Databricks data stack: Unity Catalog, Genie Spaces, Apps and AgentBricks nearly, AIHUB builds a unified memory network not only tailored to chatbots' conversations but also to the business' insights and features where both analysts and non-technical stakeholders can leverage. Beneath this is the AI Agentic evaluation workflows that could accelerate analysts' bottlenecks in evaluating and monitoring AI spaces on Databricks.
+With Databricks data stack: Unity Catalog, Genie Spaces, Apps and AgentBricks nearly, AIHUB builds a common memory network that is not only tailored to chatbots' conversations but also to the business' insights and features where both analysts and non-technical stakeholders can leverage.
 
 ## Key Features
 
-- **Analytical Memory Layer**: Streamlit User interface app ready to download in your Databricks workspace and deploy via Databricks App.
+- **User Interface**: Streamlit User interface app ready to download in your Databricks workspace and deploy via Databricks App.
 - **Persisted Memory across business domains**: with Databricks Delta Lakes and Unity Catalog. Streamlit App Databricks App deployed ready features the following graph network views:
-  - The Analytical Knowledge Base
+  - **The Analytical Layer**
     - Implemts ncodes customer segments as vector representations
     - Self organized clusters of your multi-label segments
-  - The Memory Graph Network unifing AI AgentBricks & GenieSpaces
+  - **The Memory Graph Network unifing AI AgentBricks & GenieSpaces**
     - sorts your company’s domain knowledge through corpus embeddings and
     - automate text mining protocols to either create new benchmarks or fine-tune existing ones.
-  - The Monitoring Layer closes the feedback loop:
-    - automate data preprocessing workflows on AI Agent chat histories
-    - automate evaluation benchmarks for AgentBricks & Genie spaces
-
-## AI Agentic Architecture
-
-```
-User Interface
-           │
-           ▼
-┌──────────────────────────┐
-│    Databricks App (UI)   │  ← Unified natural language interface
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│   Supervisor Agent       │  ← Agent Bricks: orchestrates routing, coordinates multi-domain responses
-└─────┬──────────┬─────────┘
-      │          │
-      ▼          ▼
-┌──────────┐  ┌─────────────────────┐
-│  Genie   │  │  Genie Space:       │
-│  Space:  │  │  Forecasting &      │
-│ Customer │  │  Campaign Intel     │
-│ Analytics│  └──────────┬──────────┘
-└─────┬────┘             │
-      └──────────┬────────┘
-                 ▼
-┌──────────────────────────┐
-│  Lakebase                │  ← Persistent memory: brand context,
-│  (Organisational Memory) │    domain glossary, session history,
-└──────────────────────────┘    analytical decisions & approved metrics
-```
+  - **AIHUB Monitor**: monitors all databricks deployed AI agents on one platform.
+    - Tracks and manages the feedback loop on session agent/chat history dataset.
+    - Entirely manage the lifecycle of question benchmarks for Genie spaces.
 
 ## Project Directory Summary
 
