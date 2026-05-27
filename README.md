@@ -20,15 +20,15 @@ Ultimatley, the key challenges:
 
 # Solution Overview
 
-AIHUB addresses these challenges by establishing a graph network layer that simultaneously functions as an analytical layer, enabling AI agents, analysts, and non-technical business users to leverage shared, structured intelligence in their decision-making processes.
+AIHUB addresses these challenges by establishing a graph network layer that simultaneously functions as an analytical layer and memory network.
 
-The graph network serves as a common memory layer that persists your organisation's business definitions, approved metrics, business rules, and analytical decisions. It aligns with Delta Lake Unity Catalog's architecture to create a near turing complete graph that is shared among your AI agents. - so every chat session is isolated with no clear lineage or trace.
+The graph network serves as a common memory layer that persists your business definitions, metrics and previous agent/chat sessions to build a knowledge base governing all your agents. It aligns with Delta Lake Unity Catalog's architecture to create a near turing-complete data workflow - your agents' frontal cortex self organizes data and prioritised features on its own.
 
 ## Key Features
 
-1. **AIHUB's persistent memory layer** is structured around three interconnected components:
-   - **Analytical Layer** encodes customer segments as vector representations, enabling geometry-aware, self-organizing clustering across multi-label segment spaces — transforming raw customer data into structured, reusable intelligence.
-   - **Memory Graph Network** unifies AgentBricks and Genie Spaces by organizing organizational domain knowledge through corpus embeddings, and automates text mining protocols to systematically surface the knowledge structures necessary for benchmark creation and model fine-tuning.
+1. **AIHUB's persistent memory layer** is structured around two interconnected components:
+   - **Analytical Layer** uses the vector representations of feature pools from Unity catalog to self organize clusters and assist in feature engineering segments. This is useful in domains where you are dealing with many multi-label features for e.g. customer needs from transactional dataset.
+   - **Memory Graph Network** unifies historical AI chat sessions from AgentBricks and Genie Spaces to persist information on your business and organisation vibe. These traces are inferred to create and rank benchmarks for Genie spaces.
 
 2. **Benchmark space for your Genie spaces**: automated agent orchestration to manage your entire evaluation benchmark for your Genie spaces — ensuring that agent performance is continuously measured, refined, and aligned with evolving business domains.
 
