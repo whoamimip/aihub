@@ -1,10 +1,8 @@
 # AIHUB — Your Organisation's Brand Agent
 
-<p align="center">
-  <a href="https://whoamimip.github.io">
-    <img src="docs/demo_preview.gif" width="700">
-  </a>
-</p>
+<div align="center">
+      <img src="docs/demo_preview.gif" alt="AIHUB Demo Preview" width="auto" height="auto" />
+</div>
 
 A Databricks-native intelligent application that automates the data lifecycle of your AI apps & Genie spaces by persisting chat histories and frequent questions in a unified graph memory network.
 
