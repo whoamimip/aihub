@@ -6,7 +6,7 @@
 
 A Databricks-native intelligent application that automates the data lifecycle of your AI apps & Genie spaces by persisting chat histories and frequent questions in a unified graph memory network.
 
-**Hackathon:** [Databricks Building Intelligent Apps with Data + AI — APJ 2026](https://buildintelligentapps-databricks.com)
+**Hackathon:** [Databricks Data & AI Apps 2026 Annual Hackathon](https://buildintelligentapps-databricks.com)
 
 # Problem Statement
 
