@@ -1,7 +1,8 @@
-# AIHUB Post Prod Monitor
+# AIHUB Monitor
 
-- **Purpose:** automates workflows on currently deployed AI Agent endpoints & Genie Spaces.
-- **Page:** `pages/3_monitor.py`
+AIHUB Monitor is a user interface built with Streamlit that enables non-tech or analysts to monitor data workflows and cost minimizations on AI agents deployed on Databricks.
+
+**Page:** `pages/3_monitor.py`
 
 ## Overview
 

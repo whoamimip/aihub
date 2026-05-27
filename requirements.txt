@@ -9,3 +9,4 @@ streamlit-vizgraph~=0.1.0
 pyvis>=0.3.2
 mkdocs-material~=9.5
 pymdown-extensions~=10.7
+pyarrow~=15.0.2

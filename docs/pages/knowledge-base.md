@@ -1,7 +1,6 @@
-# Knowledge Base: Graph Memory Network
+# AIHUB Graph Memory Network
 
-- **Purpose:** Knowledge base organsied by organisation's departments or Genie Spaces.
-- **File:** `pages/1_knowledge_base.py`
+AIHUB Graph Memory Network defines the Knowledge base shared across all AI agents deployed on Databricks.
 
 ## Overview
 
