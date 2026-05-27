@@ -1,5 +1,11 @@
 # AIHUB — Your Organisation's Brand Agent
 
+<p align="center">
+  <a href="https://whoamimip.github.io">
+    <img src="docs/demo_preview.gif" width="700">
+  </a>
+</p>
+
 A Databricks-native intelligent application that automates the data lifecycle of your AI apps & Genie spaces by persisting chat histories and frequent questions in a unified graph memory network.
 
 **Hackathon:** [Databricks Building Intelligent Apps with Data + AI — APJ 2026](https://buildintelligentapps-databricks.com)
@@ -56,17 +62,6 @@ With Databricks data stack: Unity Catalog, Genie Spaces, Apps and AgentBricks ne
       └── Home.py                # Home/landing page & UI Chatbot with your Brand Agent
 ```
 
-## Documentation
-
-Full documentation lives in [`docs/`](docs/index.md) and is built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
-
-```bash
-pip install -r requirements-docs.txt
-mkdocs serve   # http://localhost:8000
-```
-
-Sections: end-to-end [architecture](docs/architecture/overview.md), [local development](docs/setup/local-dev.md), [Databricks App deployment](docs/deployment/databricks.md), and [per-page user guides](docs/pages/index.md).
-
 ## Reference
 
 - [Supervisor Agent Hierarchies](https://www.emergentmind.com/topics/supervisor-agent-hierarchies)
@@ -74,3 +69,4 @@ Sections: end-to-end [architecture](docs/architecture/overview.md), [local devel
 - [Graph Analysis Databricks Demos](https://docs.databricks.com/aws/en/machine-learning/graph-analysis)
 
 > Built on the official Databricks [`streamlit-chatbot-app`](https://github.com/databricks/app-templates/tree/main/streamlit-chatbot-app) template, extended with supervisor agent orchestration, graph memory networking, and multi-Genie Space coordination.
+> Full documentation lives in [`docs/`](docs/index.md) and is built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
